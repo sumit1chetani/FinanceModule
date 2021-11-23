@@ -1,0 +1,190 @@
+.chatbox {
+    position: fixed;
+    position:expression("absolute");
+    width: 350px;
+    display:none;
+    border-left: 1px solid #f0e7e7;
+    box-shadow: 2px 3px 3px 2px #ccc;
+    border-top: 1px solid #ccc;
+
+}
+.chatboxhead {
+    background-color: #FB6C23; 
+    padding: 10px;
+    color: #383C3C;
+    /*
+        padding: 10px;
+        color: black;*/
+    border-right: 1px solid #4fc4bb;
+    border-left: 1px solid #4fc4bb;
+    margin-left: 0px;
+}
+
+.chatboxblink {
+    background-color: #176689;
+    border-right:1px solid #176689;
+    border-left:1px solid #176689;
+}
+
+.chatboxcontent {
+    /*	font-family: arial,sans-serif;*/
+    /*	font-size: 13px;*/
+    color: #333333;
+    height:200px;
+    /*	width:209px;*/
+    overflow-y:auto;
+    overflow-x:auto;
+    word-wrap: break-word;
+    padding:7px;
+    padding-bottom: 20px;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #eeeeee;
+    background-color: #ffffff;
+    line-height: 1.3em;
+}
+
+
+.chatboxcontent .seedsuser{
+    text-align:right;
+    /*    margin-bottom: 3px;*/
+    margin-bottom: 10px !important;    /*sakthi added*/
+}
+.chatboxcontent .seedsuser > span {
+    padding: 2%;
+    /*Saran Changed */
+    background-color:#F7F3EA; /*rgba(255, 230, 203, 0.7);//rgba(238, 238, 238, 0.75);// #E5E5E5; //#FFE6CB;*/
+    font-family: Lato, Helvetica, sans-serif;
+    display: inline-block;
+    /* padding: 5px; */
+    border-radius: 9px;
+    /* color:     #c48843 !important;//grey !important ;//#c48843 !important; */
+    width: calc(100% - 6%);
+    /* min-width: 100px; */
+    /* position: relative; */
+}
+
+.chatboxcontent .seedschatuser > span {
+    /*    background-color:  #E8FFD4;// #E5F7FD;  
+    padding:2%;*/   /*sakthi added*/
+    background-color: #F0F9F9;  /* Saran Changed */
+    padding: 5px;
+    display: inline-block;
+    /* padding: 5px; */
+    border-radius: 9px;
+    position: relative;
+    /*    min-width: 100px; */
+    width: calc(100% - 6%);
+    color : #45829b !important;
+
+}
+/*.chatboxcontent .seedschatuser > span{
+
+        background-color: #C7EAFC;//#E8FFD4;// #E8FFD4;// #E5F7FD;  
+    padding:0%;
+    color:#45829b;
+      font-family:Lato, Helvetica, sans-serif;
+       display: inline-block;
+    padding: 5px;
+    border-radius: 9px;
+       min-width: 100px;
+    position: relative;
+         width: calc(100% - 0px); 
+
+}*/
+
+.chatboxcontent .seedschatuser{
+    text-align:left;
+    /*    margin-bottom: 3px;*/
+    margin-bottom: 10px !important; /*sakthi added*/
+}
+
+.chatboxinput {
+    padding: 5px;
+    background-color: #ffffff;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+.chatboxinput #chat-attachment{
+    /*width: 30px;
+    margin-top: -15px;*/
+    width: 25px;
+    margin-top: -15px;
+    margin-left: 30px;
+}
+.chatboxinput #chat-smiley{
+    width: 30px;
+    margin-top: -15px;
+}
+
+.chatboxtextarea {
+    /*    width: 100%;*/
+    width: 99%;
+    height: 44px;
+    padding: 3px 0pt 3px 3px;
+    border: 1px solid #999;
+    /* margin: 1px; */
+    overflow: hidden;
+    /*    border-radius: 10px;*/
+}
+
+.chatboxtextareaselected {
+    border: 2px solid #4fc4bb;
+    margin:0;
+}
+
+.chatboxmessage {
+    /*	margin-left:1em;*/
+}
+
+div.chatboxmessage > span.chatboxmessagecontent.myuser{
+    color:#353a33;
+}
+
+.chatboxinfo {
+    /*	margin-left:-1em;*/
+    color:#666666;
+
+}
+
+.chatboxmessagefrom {
+    /*	margin-left:-1em;*/
+    font-weight: bold;
+}
+
+.chatboxmessagecontent {
+}
+
+.chatboxoptions {
+    float: right;
+}
+
+.chatboxoptions a {
+    text-decoration: none;
+    color:   #595757;
+    font-weight:bold;
+
+    /*	font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;*/
+}
+
+.chatboxtitle {
+    float: left;
+    text-transform: capitalize;
+    font-weight:600;
+    padding: 0px;
+    margin-left: 35px;
+
+}
+/*sakthi added*/
+input:focus, textarea:focus, select:focus {
+    /*    background-color: #fff;*/
+    border-color: #A3A3A3 !important;
+
+}
+/*input:hover, textarea:hover, select:hover {
+    background-color: #fff;
+    border-color: #F4F4F4 !important;
+  
+}*/

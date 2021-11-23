@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>truck</id>
+		<title>	TRUCK</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>servicetype</id>
+		<title>SERVICE TYPE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>serviceDate</id>
+		<title>SERVICE DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	 	  <Headerdef>
+		<id>estimatedCost</id>
+		<title>ESTIMATE COST</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>estimatedTime</id>
+		<title>ESTIMATE TIME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>jobOrderCode</id>
+		<title>JOB ORDER CODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>assignTo</id>
+		<title>ASSIGN TO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>status</id>
+		<title>STATUS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			
+		
+	
+	
+	
+
+
+</Rootheader>

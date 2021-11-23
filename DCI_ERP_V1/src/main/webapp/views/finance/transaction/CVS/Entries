@@ -1,0 +1,95 @@
+/BookingSearch.jsp/1.1/Sat May  1 04:53:38 2021//
+/BulkprintCreditNote.jsp/1.1/Sat May  1 04:53:35 2021//
+/BulkprintDebitNoteBoth.jsp/1.1/Sat May  1 04:53:34 2021//
+/DeliveryOrderSearch.jsp/1.1/Sat May  1 04:53:36 2021//
+/DeliveryOrderView.jsp/1.1/Sat May  1 04:53:35 2021//
+/FreightManifestSearch.jsp/1.1/Sat May  1 04:53:33 2021//
+/FreightManifestView.jsp/1.1/Sat May  1 04:53:32 2021//
+/HawbReportSearch.jsp/1.1/Sat May  1 04:53:35 2021//
+/HblReportSearch.jsp/1.1/Sat May  1 04:53:38 2021//
+/JobOrderSearch.jsp/1.1/Sat May  1 04:53:36 2021//
+/JobOrderView.jsp/1.1/Sat May  1 04:53:36 2021//
+/MawbReportSearch.jsp/1.1/Sat May  1 04:53:38 2021//
+/MblReportSearch.jsp/1.1/Sat May  1 04:53:34 2021//
+/PurchaseInvoiceSearch.jsp/1.1/Sat May  1 04:53:37 2021//
+/PurchaseSummarySearch.jsp/1.1/Sat May  1 04:53:34 2021//
+/SalesInvoiceSearch.jsp/1.1/Sat May  1 04:53:36 2021//
+/SalesInvoieSearch.jsp/1.1/Sat May  1 04:53:36 2021//
+/SalesPersonWiseSearch.jsp/1.1/Sat May  1 04:53:35 2021//
+/SalesPersonWiseView.jsp/1.1/Sat May  1 04:53:33 2021//
+/SalesSummarySearch.jsp/1.1/Sat May  1 04:53:36 2021//
+/TDSReportList.jsp/1.2/Wed Aug  4 04:49:41 2021//
+D/accountpayables////
+/cashBankPaymentDraftList.jsp/1.1/Sat May  1 04:53:38 2021//
+/cashBankPaymentInvoiceDialog.jsp/1.1/Sat May  1 04:53:39 2021//
+/cashBankPaymentTDSDialog.jsp/1.1/Sat May  1 04:53:40 2021//
+/cashPaymentDraftList.jsp/1.1/Sat May  1 04:53:35 2021//
+/cashPaymentForm.jsp/1.1/Sat May  1 04:53:33 2021//
+/cashPaymentList.jsp/1.1/Sat May  1 04:53:36 2021//
+/cashPaymentView.jsp/1.1/Sat May  1 04:53:39 2021//
+/cashbankPaymentCopyForm.jsp/1.1/Sat May  1 04:53:40 2021//
+/cashbankPaymentForm.jsp/1.2/Fri Jul 23 06:35:06 2021//
+/cashbankPaymentList.jsp/1.1/Sat May  1 04:53:38 2021//
+/cashbankPaymentView.jsp/1.1/Sat May  1 04:53:32 2021//
+D/cashbankreceipt////
+/cbpManualAllocation.jsp/1.1/Sat May  1 04:53:35 2021//
+/cbpUnAllocated.jsp/1.1/Sat May  1 04:53:39 2021//
+/chqPresentation.jsp/1.1/Sat May  1 04:53:33 2021//
+/chqPresentationForm.jsp/1.1/Sat May  1 04:53:42 2021//
+/chqRealisation.jsp/1.1/Sat May  1 04:53:33 2021//
+/chqRealisationForm.jsp/1.1/Sat May  1 04:53:34 2021//
+D/contraEntry////
+D/contraInterBank////
+/creditNoteForm.jsp/1.1/Sat May  1 04:53:39 2021//
+/creditNotePendingList.jsp/1.1/Sat May  1 04:53:42 2021//
+/creditNoteView.jsp/1.1/Sat May  1 04:53:40 2021//
+/creditNotepage.jsp/1.1/Sat May  1 04:53:39 2021//
+/customerAnalysisReport.jsp/1.1/Sat May  1 04:53:34 2021//
+/debitNoteAdd.jsp/1.1/Sat May  1 04:53:36 2021//
+/debitNoteList.jsp/1.1/Sat May  1 04:53:40 2021//
+/debitNoteView.jsp/1.1/Sat May  1 04:53:38 2021//
+/generalledgerentryadd.jsp/1.1/Sat May  1 04:53:32 2021//
+/generalledgerentrylist.jsp/1.1/Sat May  1 04:53:35 2021//
+/gstReport.jsp/1.1/Sat May  1 04:53:38 2021//
+/journalVoucherView.jsp/1.1/Sat May  1 04:53:39 2021//
+/journalVoucheradd.jsp/1.1/Sat May  1 04:53:37 2021//
+/journalVoucheredit.jsp/1.1/Sat May  1 04:53:33 2021//
+/journalVoucherpage.jsp/1.1/Sat May  1 04:53:33 2021//
+/journalVoucherpageDraft.jsp/1.1/Sat May  1 04:53:36 2021//
+D/jvaccounts////
+/openingBalanceAdd.jsp/1.2/Thu Aug 19 09:49:48 2021//
+/openingBalanceUpload.jsp/1.1/Sat May  1 04:53:37 2021//
+/paymentInformationAdd.jsp/1.1/Sat May  1 04:53:35 2021//
+/paymentInformationList.jsp/1.1/Sat May  1 04:53:33 2021//
+/paymentOrderEdit.jsp/1.1/Sat May  1 04:53:37 2021//
+/paymentOrderForm.jsp/1.1/Sat May  1 04:53:38 2021//
+/paymentOrderList.jsp/1.1/Sat May  1 04:53:39 2021//
+/paymentOrderView.jsp/1.1/Sat May  1 04:53:37 2021//
+/pendingBLGeneralListPage.jsp/1.1/Sat May  1 04:53:39 2021//
+/pendingBLGeneralView.jsp/1.1/Sat May  1 04:53:32 2021//
+/pendingBLListPage.jsp/1.1/Sat May  1 04:53:38 2021//
+/pendingBLView.jsp/1.1/Sat May  1 04:53:36 2021//
+/pendingPHCGeneralView.jsp/1.1/Sat May  1 04:53:32 2021//
+/pendingPHCView.jsp/1.1/Sat May  1 04:53:34 2021//
+/pettyCashApprovalEdit.jsp/1.1/Sat May  1 04:53:37 2021//
+/pettyCashApprovalList.jsp/1.1/Sat May  1 04:53:35 2021//
+/pettycashtransferApprovalAdd.jsp/1.1/Sat May  1 04:53:33 2021//
+/pettycashtransferApprovalList.jsp/1.1/Sat May  1 04:53:40 2021//
+/pettycashtransferApprovalListPrint.jsp/1.1/Sat May  1 04:53:37 2021//
+/pettycashtransferApprovalListPrint1.jsp/1.1/Sat May  1 04:53:39 2021//
+/pettycashtransferApprove.jsp/1.1/Sat May  1 04:53:41 2021//
+D/print////
+/printCreditNote.jsp/1.1/Sat May  1 04:53:39 2021//
+/printPurchaseCreditNote.jsp/1.1/Sat May  1 04:53:33 2021//
+/purchaseCreditNoteAdd.jsp/1.1/Sat May  1 04:53:40 2021//
+/purchaseCreditNoteAdd1.jsp/1.1/Sat May  1 04:53:38 2021//
+/purchaseCreditNoteForm.jsp/1.1/Sat May  1 04:53:38 2021//
+/purchaseCreditNoteList.jsp/1.1/Sat May  1 04:53:40 2021//
+/purchaseCreditnewView.jsp/1.1/Sat May  1 04:53:34 2021//
+/purchasecreditNoteListPage.jsp/1.1/Sat May  1 04:53:39 2021//
+/purchasecreditNoteView.jsp/1.1/Sat May  1 04:53:40 2021//
+/rebateFreightRefundAdd.jsp/1.1/Sat May  1 04:53:35 2021//
+/rebateFreightRefundList.jsp/1.1/Sat May  1 04:53:32 2021//
+D/setOff////
+D/taxtype////
+/transactionReverseDialog.jsp/1.1/Sat May  1 04:53:37 2021//

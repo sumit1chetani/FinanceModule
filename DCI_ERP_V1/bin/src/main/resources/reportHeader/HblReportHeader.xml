@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>hawbNo</id>
+		<title>	HBL No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>hawbDate</id>
+		<title> HBL Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>hawbDocNo</id>
+		<title> HBL Doc No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>hawbDocDate</id>
+		<title> HBL Doc Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>jobName</id>
+		<title>Job No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>mbw</id>
+		<title>MBL No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+
+
+	<Headerdef>
+		<id>polName</id>
+		<title> POL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>podName</id>
+		<title> POD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>shipper</id>
+		<title>Shipper</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>consignee</id>
+		<title>Consignee</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>customer</id>
+		<title>Customer</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>salesperson</id>
+		<title>Sales Person</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>branch</id>
+		<title>Branch</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>vessel</id>
+		<title>Vessel/Voyage</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>feedervsl</id>
+		<title>Feeder Vessel/Voyage</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+
+
+</Rootheader>

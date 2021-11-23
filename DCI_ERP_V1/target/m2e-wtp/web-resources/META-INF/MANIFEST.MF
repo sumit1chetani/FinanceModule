@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: dci
+Implementation-Version: 0.1.0
+Built-By: techiny
+Implementation-Vendor-Id: com.dci
+Build-Jdk: 1.8.0_281
+Implementation-URL: http://projects.spring.io/spring-boot/dci/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

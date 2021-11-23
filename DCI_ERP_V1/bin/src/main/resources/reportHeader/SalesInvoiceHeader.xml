@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>invoiceNo</id>
+		<title>	Invoice No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>invoiceDate</id>
+		<title> Invoice Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>jobName</id>
+		<title>Job No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<!--  	<Headerdef>
+		<id>hbl</id>
+		<title>HBL No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>hbw</id>
+		<title>HAWB No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mbl</id>
+		<title>MBL No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mbw</id>
+		<title>MAWB No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>vessel</id>
+		<title>Vessel/Voyage</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>flight</id>
+		<title>Flight No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>polName</id>
+		<title>POL / AOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>podName</id>
+		<title>POD / AOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	<Headerdef>
+		<id>party</id>
+		<title>Party</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<!-- <Headerdef>
+		<id>to_nam</id>
+		<title>To</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	<Headerdef>
+		<id>branch</id>
+		<title>Branch</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mode</id>
+		<title>Mode</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>currency</id>
+		<title>Currency</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+<Headerdef>
+		<id>amount1</id>
+		<title>Invoice Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+<!-- 	<Headerdef>
+		<id>taxAmt1</id>
+		<title>GST Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	<Headerdef>
+		<id>cgstAmt</id>
+		<title>CGST Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>sgstAmt</id>
+		<title>SGST	Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>igstAmt</id>
+		<title>IGST Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<!-- <Headerdef>
+		<id>dsAmount</id>
+		<title>Discount Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	<Headerdef>
+		<id>total1</id>
+		<title> Total Invoice Amount</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+
+
+</Rootheader>

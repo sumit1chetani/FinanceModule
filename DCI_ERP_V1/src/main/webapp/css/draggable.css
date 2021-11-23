@@ -1,0 +1,39 @@
+ [data-ng-drag] {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        [data-ng-drag] {
+            text-align: center;
+            cursor: move;
+        }
+        [data-ng-drag].dragging {
+            opacity: 0.7;
+        }
+        [data-ng-drop] {
+            text-align: center;
+            display: block;
+            position: relative;
+            float: left;
+        }
+        [data-ng-drop] span.title {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 20px;
+            margin-left: -100px;
+            margin-top: -10px;
+        }
+        [data-ng-drop] div {
+            position: relative;
+            z-index: 2;
+        }
+       .dragList .last-child{
+            float: none;
+  			overflow: hidden;
+ 	 		width: auto;
+       }

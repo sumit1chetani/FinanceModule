@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Rootheader>
+    <Headerdef>
+		<id>shipment_term</id>
+		<title>Shipment Terms</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>dis_load_id</id>
+		<title>LOAD ID</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+		<Headerdef>
+		<id>agent_voyage_number</id>
+		<title>Voyage</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>rotation_number</id>
+		<title>DIS Rotation #</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>load_rotation</id>
+		<title>Load Rotation #</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+		<Headerdef>
+		<id>file_name</id>
+		<title>File Name</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>	
+			<Headerdef>
+		<id>created_dt</id>
+		<title>Uploaded Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>	
+	
+				<Headerdef>
+		<id>container_no</id>
+		<title>Container No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		
+		<Headerdef>
+		<id>mlo</id>
+		<title>Customer</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+		<Headerdef>
+		<id>check_digit</id>
+		<title>Check Digit</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>origin_port</id>
+		<title>Origin Port</title>
+		<directive>false</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>load_port</id>
+		<title>Load Port</title>
+		<directive>false</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot1</id>
+		<title>POT1</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot2</id>
+		<title>POT2</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot3</id>
+		<title>POT3</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>distination_port</id>
+		<title>DIS PORT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>total_weight</id>
+		<title>Total Weight</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>bill_of_loading</id>
+		<title>Bill Of Lading</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>cargo_consign_weiht</id>
+		<title>Consign Weight</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+</Rootheader>

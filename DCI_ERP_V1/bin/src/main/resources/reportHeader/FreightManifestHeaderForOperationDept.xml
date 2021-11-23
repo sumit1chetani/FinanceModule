@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>jobNo</id>
+		<title>	JOB NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mode</id>
+		<title>MODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>salesrep</id>
+		<title>SALES REP</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	 	  <Headerdef>
+		<id>customer</id>
+		<title>CUSTOMER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>shipper</id>
+		<title>SHIPPER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pol</id>
+		<title>POL / AOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>pod</id>
+		<title>POD / AOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>driverName</id>
+		<title>DRIVER'S NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>finalDest</id>
+		<title>FINAL DEST</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>carrier</id>
+		<title>CARRIER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>containerNo</id>
+		<title>CONTAINER NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>hbl</id>
+		<title>HBL / HAWB.NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>volume</id>
+		<title>VOLUME / CHARGABLE WT.</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>vsl</id>
+		<title>VSL / FLIGHT DETAILS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>agentName</id>
+		<title>AGENT NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>invoiceNo</id>
+		<title>INVOICE NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>currency</id>
+		<title>CURRENCY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>buyingPrice</id>
+		<title>BUYING PRICE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>sellingPrice</id>
+		<title>SELLING PRICE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>netIncome</id>
+		<title>NET INCOME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>remarks</id>
+		<title>REMARKS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+</Rootheader>

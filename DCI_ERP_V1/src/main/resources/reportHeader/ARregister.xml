@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+  
+ 
+	<Headerdef>
+		<id>payer</id>
+		<title>	CUSTOMER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>grp_invoice_no</id>
+		<title>INVOICE NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>grp_invoice_dt</id>
+		<title>INVOICE DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	 	  <Headerdef>
+		<id>balance</id>
+		<title>BALANCE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>balance_usd</id>
+		<title>BALANCE_USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>voyage</id>
+		<title>TRIP</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	
+	<!-- <Headerdef>
+		<id>trip</id>
+		<title>Trip</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> -->
+			<Headerdef>
+		<id>pol</id>
+		<title>LOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>pod</id>
+		<title>LOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		
+<Headerdef>
+		<id>sailingDt</id>
+		<title>TRIP DT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>country</id>
+		<title>COUNTRY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+					<Headerdef>
+		<id>mloCity</id>
+		<title>CUSTOMER CITY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+</Rootheader>

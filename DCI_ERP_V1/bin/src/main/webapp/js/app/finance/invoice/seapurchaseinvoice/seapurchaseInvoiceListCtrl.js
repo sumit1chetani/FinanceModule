@@ -1,0 +1,512 @@
+'use strict';
+app.controller('SeapurchaseInvoiceListCtrl', function($scope, $rootScope, $http, $location, logger, $log, ngDialog, 
+        $modal, utilsService, sharedProperties, $state,$window,$controller,$stateParams) {
+
+    $scope.pageCounters = [14, 16, 17, 18, 150, 500, 1000 ];
+    $('.rounded').val($rootScope.SeapurchaseInvoiceListCtrl);
+    
+    $scope.offsetCount = 0;
+    $scope.limitCount = 1000;
+    $scope.rowCollection = [];
+    $scope.displayedCollection = [];
+    $scope.itemsByPage = 14;
+    $scope.initial = {}; 
+    $scope.isAdd = true; 
+    $scope.hideDownloadIcon= true;
+    
+    $scope.fromToPurInvList=[];
+    $scope.bulkPurInvoice = {
+            fromPurInvoiceNo:'',
+            toPurInvoiceNo:'',
+            fromDate : '',
+            toDate : ''
+            
+    }
+    
+    $scope.purchaseInvoiceData = {
+            puchaseInvoiceNo :'',
+            puchaseInvoiceDate :'',
+            supplier :'',
+            partyInvoiceNo :'',
+            partyInvoiceDate :'',
+            purchaseDraftNo: '',
+            draftMode:'',
+            purchaseNo :'',
+            dueDate :'',
+            currency :'',
+            exgRate :'',
+            amountLocal :'',
+            amountUSD :'',
+            company :'',
+            description :'',
+            type:'',
+            purInvDetail : [],
+            detailArr:[],
+            edit : false,
+            fromDate : '',
+            toDate : '',
+            jobNo :'',
+            pol :'',
+            pod :'',
+            party :'',
+            totalAmount:'',
+         };
+    $scope.currentURL=$location.protocol() + '://'+ $location.host() +':'+  $location.port()+"/#" +$location.path();
+    
+    
+    $scope.saveDraft = function(puchaseInvoiceNo) {
+    	$rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+    	 
+    	$scope.modeType=1;
+		$scope.invoiceType=2;
+	        $http.get($stateParams.tenantid+'/jobOrderMonthClose/getInvoiceDate?mode=' + $scope.modeType +'&invoiceId='+ puchaseInvoiceNo +'&invoiceType='+ $scope.invoiceType).success(function(datas) {
+	            if(datas){
+	                logger.logError("Job Order Closed Pls Contact IT Support");
+                 }else{
+                	 $location.path($stateParams.tenantid+"/invoice/purchaseinvoice/purchaseInvoiceEd/"+puchaseInvoiceNo);
+                 }
+	        })
+    };
+    
+    if(window.localStorage.getItem('purchaseIv_list')==$scope.currentURL){
+        alert('window ' + $scope.currentURL + ' is already opened');
+       // window.focus();
+        //window.open($rootScope.currentURL,'_self').close();
+      
+       // window.close();
+       // localStorage.removeItem('purchaseIv');
+    }else{
+        window.localStorage.setItem('purchaseIv', $scope.currentURL);
+        window.localStorage.removeItem('purchaseIv');
+        //window.localStorage.removeItem('purchaseIv');
+    }
+   
+    $http.get($stateParams.tenantid + '/app/seapurchaseinvoice/getlist').success(
+			function(response) {
+				$scope.rowCollection = response.purchaseInvoiceList;
+			});
+
+    $http.get($stateParams.tenantid + '/app/seapurchaseinvoice/getDraftlist').success(
+			function(response) {
+				$scope.rowCollection1 = response.purchaseInvoiceList;
+			});
+    
+    $scope.verified = function(objPuInvHdrLstBean) {
+        $http.post($stateParams.tenantid+'/app/purchaseinvoice/toVerify', objPuInvHdrLstBean).success(function(result) {
+            if (result) {
+                objPuInvHdrLstBean.verified=true;
+                logger.logSuccess("Purchase Invoice verified successfully");
+               // $scope.search();
+            }
+        });
+    }
+    
+    $scope.binu = false;
+    $scope.search = function(){
+        $scope.rowCollection = [];
+        $scope.purchaseInvoiceData.fromDate = $scope.bulkPurInvoice.fromDate;
+        $scope.purchaseInvoiceData.toDate = $scope.bulkPurInvoice.toDate;
+        if(($scope.purchaseInvoiceData.fromDate == "" || $scope.purchaseInvoiceData.fromDate == undefined) && 
+                ($scope.purchaseInvoiceData.toDate == "" || $scope.purchaseInvoiceData.toDate == undefined)){
+            $scope.getPurchaseInvoiceList();
+        }else{
+            $http.post($stateParams.tenantid+'/app/purchaseinvoice/getListByDate',$scope.purchaseInvoiceData).success(function(data) {
+                if(data.success){
+                    console.log("from date")
+                    console.log(data)
+                    $scope.rowCollection = $scope.rowCollection.concat(data.objPuInvHdrLstBean);
+                    if($scope.rowCollection[0].loginId == 'E108')
+                        $scope.binu = true;
+                }
+            })
+        }
+    }
+    
+   console.log("form code")
+   console.log($('#form_code_id').val())
+    $scope.getPurchaseInvoiceList = function() {
+       $scope.rowCollection = [];
+        $http.get($stateParams.tenantid+'/app/purchaseinvoice/list?limit=' + $scope.limitCount + '&offset=' + $scope.offsetCount + '&formCode='+$('#form_code_id').val()).success(function(data) {
+           if (data.success == true && !utilsService.isUndefinedOrNull(data.objPuInvHdrLstBean)) {
+               console.log("&&&&&&&&&&&&&&&&&&&&")
+               console.log(data.objPuInvHdrLstBean)
+                $scope.rowCollection = $scope.rowCollection.concat(data.objPuInvHdrLstBean);
+                if($scope.rowCollection[0].loginId == 'E108')
+                    $scope.binu = true;
+            }
+        }).error(function(data) {
+            logger.logError("Error Please Try Again");
+        });
+    };
+
+    $scope.getPurchaseInvoiceList();
+
+    
+    $scope.getPurInvoiceDropdownList = function() {
+        $http.get($stateParams.tenantid+'/app/purchaseinvoice/list?limit=' + $scope.limitCount + '&offset=' + $scope.offsetCount + '&formCode='+$('#form_code_id').val()).success(function(data) {
+            if (data.success == true && !utilsService.isUndefinedOrNull(data.objPuInvHdrLstBean)) {
+                var arr=[];
+                angular.forEach(data.objPuInvHdrLstBean,function(row,index){
+                    var obj = new Object();
+                    obj.id = row.puchaseInvoiceNo;
+                    obj.text = row.puchaseInvoiceNo;
+                    
+                    arr.push(obj);
+                });
+                $scope.fromToPurInvList = arr;
+             }
+         }).error(function(data) {
+             logger.logError("Error Please Try Again");
+         });
+    }
+    $scope.getPurInvoiceDropdownList();
+    
+    // invoice DRaft Delete
+	$scope.deleteInvoice = function(sNo) {
+		ngDialog
+				.openConfirm()
+				.then(
+						function() {
+							$http.post($stateParams.tenantid + '/app/seapurchaseinvoice/cancel?sNo=',+ sNo).success(function(data) {
+						    if(data.success==true){
+						    	logger.logSuccess('Invoice Deleted Successfully.');
+						    	 $state.reload();
+						    	$location.path($stateParams.tenantid+ "/invoice/sea/seapurchaseinvoice/PurchaseInvoiceList");
+						    }
+						    else{
+						    	logger.logError(data.message);
+						    }
+						    
+							}).error(function(data) {
+					    });
+				});
+	};
+    
+    
+    
+    $scope.bulkPrint= function(fromPurInvoiceNo,toPurInvoiceNo){
+        //bulkPurInvoice.fromPurInvoiceNo,bulkPurInvoice.toPurInvoiceNo
+        var url = $stateParams.tenantid+'/app/purchaseinvoice/bulkPrint?fromPurInvoiceNo=' + fromPurInvoiceNo+"&toPurInvoiceNo="+toPurInvoiceNo;
+        var wnd = $window.open(url, 'Shipping', 'height=700,width=800,toolbar=no,scrollbars=yes,fullscreen=no,status=yes,menubar=no,location=no,directories=no,resizable=yes');
+        wnd.print();   
+     }
+    
+    //** ********Add,Edit and Delete******** *//*
+  $scope.add = function() {
+	  $rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+      $scope.isAdd  = true;
+      $location.path($stateParams.tenantid+"/invoice/sea/purchaseinvoice/PurchaseInvoiceAdd");
+      
+  };
+
+  $scope.fileUpload = function () {
+          ngDialog.open({
+              template : 'fileModal',
+              scope :$scope
+          });
+      
+  }
+  
+  
+  $scope.viewDraft = function(limit, offset) {
+	  $rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+      $state.go('app.finance.invoice.purchaseinvoice-draft',{tenantid:$stateParams.tenantid});
+  };
+  $rootScope.uploadPIFile = function(element){
+      $scope.excelfile = element.files[0];
+      console.log($scope.excelfile);
+  }
+  
+  $rootScope.uploadPIStatement =function(){
+      ngDialog.close();
+      var excelfile=$scope.excelfile;
+      var fileExtension= excelfile.name;
+      var fName=[];
+      fName=fileExtension.split(".");
+      console.log(fName);
+      for(var i=0;i<fName.length;i++){
+          if(fName[i] == "xls" || fName[i] == "xlsx"){
+              var frmData=new FormData();
+              frmData.append("file",excelfile);
+              $.ajax({
+                  type : "POST",
+                  url : "app/purchaseinvoice/bulkUpload",
+                  data : frmData,
+                  contentType: false,
+                  processData: false,
+                  success : function(result) {
+                      console.log(result);
+                      if(result.success){
+                          logger.logSuccess("Purchase Invoices generated sucessfully");
+                          $state.reload();
+                      }else{
+                          logger.logError(result.message);
+                          $state.reload();
+                      }                      
+                  }
+                 
+              });
+          }
+          
+      }
+  }
+  
+  $scope.fileDownload = function(){
+      var url = $stateParams.tenantid+"/assets/excelDocument/PURCHASE_INV_BULK.xlsx"
+      $window.location.href = url;
+
+  }
+ 
+  
+    // Redirecting Page For Edit Functionality
+    $scope.editRow = function(purchaseInvoiceNo,index) {
+    	$rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+        $scope.isAdd  = false;
+        $location.path($stateParams.tenantid+"/invoice/purchaseinvoice/PurchaseInvoiceEdit/"+purchaseInvoiceNo);
+    };
+
+    // remove to the real data holder
+    $scope.deleteRow = function(puchaseInvoiceNo, index) {
+        ngDialog.openConfirm().then(function() {
+            var myURL = $stateParams.tenantid+'/app/purchaseinvoice/delete';
+            $http({
+                method : 'post',
+                url : myURL,
+                data : puchaseInvoiceNo,
+            }).success(function(data) {
+                if (data == true) {
+                    var tableData = $scope.rowCollection;
+                    $scope.rowCollection.splice(index, 1);
+                    logger.logSuccess("Purchase Invoice deleted successfully");
+                } else {
+                    logger.logError("Error in deleting Purchase Invoice master!");
+                }
+            }).error(function(data) {
+                logger.logSuccess("Error in Delete Purchase Invoice Master!");
+            });
+            console.log('Modal promise resolved. Value: ');
+        }, function(reason) {
+            console.log('Modal promise rejected. Reason: ', reason);
+        });
+
+    };
+    
+ // Redirecting Page For View Functionality
+    $scope.view = function(purchaseInvoiceNo,index) {
+    	$rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+        $scope.isAdd  = false;
+        $location.path($stateParams.tenantid+"/invoice/seapurchaseinvoice/PurchaseInvoiceView/"+purchaseInvoiceNo);
+    };
+
+
+    /*  $scope.reversePIN = function(reverseInvoiceNo){
+            if(reverseInvoiceNo =="" || reverseInvoiceNo ==undefined){
+                logger.logError("Please select invoice");
+            }else{
+                $http.post('app/purchaseinvoice/reversePIN',reverseInvoiceNo).success(function(datas) {
+                    debugger;
+                    if(datas.success == true){
+                        if(datas.message =='Invoice is already reversed !..')
+                            logger.logError(datas.message)
+                        else
+                            logger.logSuccess(datas.message);
+                    }else{
+                        logger.logError(datas.message);
+                    }
+                    }).error(function(datas) {
+                });
+            }
+        }*/
+        
+        $scope.reversePIN = function(reverseInvoiceNo) {
+            if(reverseInvoiceNo =="" || reverseInvoiceNo ==undefined){
+                logger.logError("Please select invoice");
+            }else{         
+                ngDialog.open({
+                    scope : $scope,
+                    template : 'views/finance/transaction/transactionReverseDialog',
+                    controller : $controller('purchaseInvoiceReverseCtrl', {
+                        $scope : $scope,
+                        invoiceNo: reverseInvoiceNo,
+                        screenName: 'purchaseinvoice'
+                    }),
+                    className : 'ngdialog-theme-plain',
+                    showClose : false,
+                    closeByDocument : false,
+                    closeByEscape : false,
+                    preCloseCallback : $scope.getList
+                });
+            }
+        };
+        
+        $scope.copyInvoice =function(reverseInvoiceNo){
+            if(reverseInvoiceNo =="" || reverseInvoiceNo ==undefined){
+                logger.logError("Please select invoice");
+            }else{
+                $location.path($stateParams.tenantid+"/invoice/purchaseinvoice/PurchaseInvoiceCopy/"+reverseInvoiceNo);  
+            }
+            
+        }
+        
+        
+        
+        
+        var quickLinkIdList = $location.search().quickLinkIdList;
+        $scope.newQukLinkList=[];
+        $scope.qlt=[];
+        if(quickLinkIdList!='' && quickLinkIdList != undefined){
+        	 $scope.qlt=quickLinkIdList.split(',');
+        	 $http.get($stateParams.tenantid + '/app/seapurchaseinvoice/getlist').success(
+				function(response) {
+					$scope.rowCollection = response.purchaseInvoiceList;
+                if($scope.rowCollection !=null && $scope.rowCollection.length>0 ){
+                	angular.forEach($scope.rowCollection, function(value, key) {
+                		angular.forEach($scope.qlt, function(value1, key1) {
+                    		if(value.purchaseSNo==value1){
+                    			$scope.newQukLinkList.push(value);
+                    		}
+                    	})
+                	})
+                	$scope.rowCollection=[];
+                	$scope.rowCollection=$scope.newQukLinkList;
+                }
+            	
+                }).error(function(datas) {
+            });
+            
+         }
+        
+        
+        
+        
+});
+//draft
+
+app.controller('purchaseInvoiceListDraftCtrl', function($scope, $rootScope, $http, $location, logger, $log, ngDialog, 
+        $modal, utilsService, sharedProperties, $state,$window,$controller,$stateParams) {
+
+    $scope.pageCounters = [14, 16, 17, 18, 150, 500, 1000 ];
+
+    $scope.offsetCount = 0;
+    $scope.limitCount = 1000;
+    $scope.rowCollection = [];
+    $scope.displayedCollection = [];
+    $scope.itemsByPage = 14;
+    $scope.initial = {}; 
+    $scope.isAdd = true; 
+    $scope.hideDownloadIcon= true;
+    
+    $scope.fromToPurInvList=[];
+    $scope.bulkPurInvoice = {
+            fromPurInvoiceNo:'',
+            toPurInvoiceNo:''
+    }
+    
+    $scope.purchaseInvoiceData = {
+            puchaseInvoiceNo :'',
+            puchaseInvoiceDate :'',
+            supplier :'',
+            partyInvoiceNo :'',
+            partyInvoiceDate :'',
+            purchaseNo :'',
+            dueDate :'',
+            currency :'',
+            exgRate :'',
+            amountLocal :'',
+            amountUSD :'',
+            company :'',
+            description :'',
+            type:'',
+            purInvDetail : [],
+            detailArr:[],
+            edit : false
+         };
+  
+    $scope.getPurchaseInvoiceList = function() {
+       console.log("call list")
+        $http.get($stateParams.tenantid+'/app/purchaseinvoice/Draftlist?limit=' + $scope.limitCount + '&offset=' + $scope.offsetCount + '&formCode='+'F0186').success(function(data) {
+            console.log("data")
+            console.log(data)
+           if (data.success == true && !utilsService.isUndefinedOrNull(data.objPuInvHdrLstBean)) {
+               
+               console.log("hello")
+               console.log(data.objPuInvHdrLstBean)
+                $scope.rowCollection = $scope.rowCollection.concat(data.objPuInvHdrLstBean);
+            }
+        }).error(function(data) {
+            logger.logError("Error Please Try Again");
+        });
+    };
+
+    $scope.getPurchaseInvoiceList();
+
+    
+    $scope.getPurInvoiceDropdownList = function() {
+        $http.get($stateParams.tenantid+'/app/purchaseinvoice/Draftlist?limit=' + $scope.limitCount + '&offset=' + $scope.offsetCount + '&formCode='+'F0186').success(function(data) {
+            if (data.success == true && !utilsService.isUndefinedOrNull(data.objPuInvHdrLstBean)) {
+                var arr=[];
+                angular.forEach(data.objPuInvHdrLstBean,function(row,index){
+                    var obj = new Object();
+                    obj.id = row.puchaseInvoiceNo;
+                    obj.text = row.puchaseInvoiceNo;
+                    
+                    arr.push(obj);
+                });
+                $scope.fromToPurInvList = arr;
+             }
+         }).error(function(data) {
+             logger.logError("Error Please Try Again");
+         });
+    }
+    $scope.getPurInvoiceDropdownList();
+    
+ 
+  
+    // Redirecting Page For Edit Functionality
+
+    $scope.editRow = function(purchaseInvoiceNo,index) {
+    	$rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+        $scope.isAdd  = false;
+        $location.path($stateParams.tenantid+"/invoice/purchaseinvoice/PurchaseInvoiceEditTemp/"+purchaseInvoiceNo);
+    };
+
+    // remove to the real data holder
+    $scope.deleteRow = function(puchaseInvoiceNo, index) {
+        ngDialog.openConfirm().then(function() {
+            var myURL = $stateParams.tenantid+'/app/purchaseinvoice/delete';
+            $http({
+                method : 'post',
+                url : myURL,
+                data : puchaseInvoiceNo,
+            }).success(function(data) {
+                if (data == true) {
+                    var tableData = $scope.rowCollection;
+                    $scope.rowCollection.splice(index, 1);
+                    logger.logSuccess("Purchase Invoice deleted successfully");
+                } else {
+                    logger.logError("Error in deleting Purchase Invoice master!");
+                }
+            }).error(function(data) {
+                logger.logSuccess("Error in Delete Purchase Invoice Master!");
+            });
+            console.log('Modal promise resolved. Value: ');
+        }, function(reason) {
+            console.log('Modal promise rejected. Reason: ', reason);
+        });
+
+    };
+    
+ // Redirecting Page For View Functionality
+    $scope.view = function(purchaseInvoiceNo,index) {
+    	$rootScope.SeapurchaseInvoiceListCtrl=$('.rounded').val();
+        $scope.isAdd  = false;
+        $location.path($stateParams.tenantid+"/invoice/purchaseinvoice/PurchaseInvoiceView/"+purchaseInvoiceNo);
+    };
+
+        
+});
+
+//draft
+app.controller('purchaseInvoiceReverseCtrl', function($scope, $http,ngDialog,logger,$location,invoiceNo,screenName,$timeout,$stateParams) {
+	
+});

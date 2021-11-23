@@ -1,0 +1,534 @@
+
+<Rootheader>
+	<Headerdef>
+		<id>shipment_term</id>
+		<title>SHIPMENT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>line_code</id>
+		<title>LINE CODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>voyage_agent_code</id>
+		<title>VOYAGE AGENT CODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>vessel_name</id>
+		<title>VESSEL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>agent_voyage_number</id>
+		<title>VOYAGE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>curr_voyage</id>
+		<title>CR-VOYAGE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>rotation_number</id>
+		<title>Discharge Rotation</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>load_rotation</id>
+		<title>Load Rotation</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>port_code_dis</id>
+		<title>PORT CODE DISCHARGE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>exp_arrive_date</id>
+		<title>ARRIVE DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>mrn_no</id>
+		<title>MRN No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>acknowledge</id>
+		<title>Acknowledgement No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>stackusgtype</id>
+		<title>StackUsage Type</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>typeofactivity</id>
+		<title>Activity Type</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+	<Headerdef>
+		<id>rotation_number</id>
+		<title>ROTATION</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> 
+	<Headerdef>
+		<id>mess_type</id>
+		<title>MESS TYPE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>no_of_instalment</id>
+		<title>NO OF INSTALMENT</title>
+		<directive>false</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>stack_usage</id>
+		<title>STACK USAGE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mlo</id>
+		<title>CUST</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>container_no</id>
+		<title>CONTAINER NO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>check_digit</id>
+		<title>CHECK DIGIT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>iso_code</id>
+		<title>ISO CODE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>designation</id>
+		<title>DESIGNATION</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>stowage</id>
+		<title>STOWAGE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>seal_no</id>
+		<title>SEAL NO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>cont_code</id>
+		<title>CONT CODE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>origin_port</id>
+		<title>ORIGIN PORT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>load_port</id>
+		<title>LOAD PORT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot1</id>
+		<title>POT1</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot2</id>
+		<title>POT2</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pot3</id>
+		<title>POT3</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>distination_port</id>
+		<title>DESTNATION PORT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>consignee</id>
+		<title>CONSIGNEE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>total_weight</id>
+		<title>TOTAL WEIGHT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>imco</id>
+		<title>IMCO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>unno</id>
+		<title>UNNO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>imco_code_2</id>
+		<title>IMCO CODE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>unno_2</id>
+		<title>UNNO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>imco_code_3</id>
+		<title>IMCO CODE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>unno_3</id>
+		<title>UNNO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>reefer_set_temp</id>
+		<title>REEFER SET TEMP</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>unit_of_temp</id>
+		<title>UNIT OF TEMP</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>out_of_guage_ind</id>
+		<title>OUT OF GUAGE INDICATOR</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>over_height</id>
+		<title>OVER HEIGHT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>over_width_left</id>
+		<title>OVER WIDTH LEFT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>over_width_right</id>
+		<title>OVER WIDTH RIGHT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>over_length_front</id>
+		<title>OVER LENGTH FRONT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>over_length_back</id>
+		<title>OVER LENGTH BACK</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>bill_of_loading</id>
+		<title>BILL OF LOADING</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>shipper_name</id>
+		<title>SHIPPER NAME</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>shipper_adddress</id>
+		<title>SHIPPER ADDRESS</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>consignee_name</id>
+		<title>CONSIGNEE NAME</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>consignee_address</id>
+		<title>CONSIGNEE ADDRESS</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+	<Headerdef>
+		<id>norify_name</id>
+		<title>NOTIFY NAME</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>notify_address</id>
+		<title>NOTIFY ADDRESS</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>masrks_numer</id>
+		<title>MARKS AND NUMBERS</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>commodity_desc</id>
+		<title>COMMODITY DESCRIPTION</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>tare_weight</id>
+		<title>TARE WEIGHT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>size_type</id>
+		<title>SIZE TYPE</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>cargo_consign_weiht</id>
+		<title>CONSIGNMENT WEIGHT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>sub_slot</id>
+		<title>SUB SLOT</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>payer_id</id>
+		<title>PAYER ID</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>ts_thc_payer</id>
+		<title>THC PAYER</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+	<Headerdef>
+		<id>dis_load_id</id>
+		<title>DIS LOAD ID</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+</Rootheader>

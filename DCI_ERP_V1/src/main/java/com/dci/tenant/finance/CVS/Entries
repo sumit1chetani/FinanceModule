@@ -1,0 +1,79 @@
+D/BudgetReport////
+D/ManageCostCenter////
+D/PurchaseCreditNote////
+/RebateFreightRefundBean.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundController.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundDAO.java/1.1/Sat May  1 04:55:56 2021//
+/RebateFreightRefundDAOImpl.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundDtlBean.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundQueryUtil.java/1.1/Sat May  1 04:55:58 2021//
+/RebateFreightRefundResultBean.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundService.java/1.1/Sat May  1 04:55:57 2021//
+/RebateFreightRefundServiceImpl.java/1.1/Sat May  1 04:55:57 2021//
+D/TDSForm////
+D/TdsReport////
+D/accounthead////
+D/balanceSheet////
+D/bankcompany////
+D/bankreconciliation////
+D/budgetAllocation////
+D/budgetDefinition////
+D/budgetOverview////
+D/budgetType////
+D/cashbankbook////
+D/cashbankpayment////
+D/cashbankreceipt////
+D/chartOfAccounts////
+D/chqBook////
+D/chqPresentation////
+D/chqreconcilation////
+D/closingaccounts////
+D/consignmentRequest////
+D/creditnote////
+D/currencyNew////
+D/debitnote////
+D/disciplinaryaction////
+D/exchangerate////
+D/financialyear////
+D/generalInvoice////
+D/generalpurchaseInvoice////
+D/grn////
+D/grouphead////
+D/inventoryRprt////
+D/journalVoucherType////
+D/journalvoucher////
+D/leave////
+D/letterRequest////
+D/manageCustomer////
+D/manageSubTax////
+D/manageTax////
+D/manageitem////
+D/manualattendance////
+D/openingbalanceupload////
+D/payableAgewise////
+D/paymentInformation////
+D/paymentOrder////
+D/paymentReport////
+D/paymentreceipt////
+D/pendingReceiptReport////
+D/permissionReq////
+D/profitAndLoss////
+D/profitandlossnew////
+D/purchaseInvoice////
+D/purchaseorder////
+D/purchasequotation////
+D/receivableAgewise////
+D/report////
+D/reports////
+D/salesorder////
+D/shiftmaster////
+D/shiftschememaster////
+D/soa////
+D/staffcircular////
+D/staffnotification////
+D/storeToStore////
+D/subgroupaccount////
+D/subheadgroupaccount////
+D/tax////
+D/transferReceived////
+D/trialBalance////

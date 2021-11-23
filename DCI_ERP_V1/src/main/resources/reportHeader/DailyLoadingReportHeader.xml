@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>loadDate</id>
+		<title>	LOAD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>dispatchDate</id>
+		<title>DISPATCH</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>returnDate</id>
+		<title>RETURN</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	 	  <Headerdef>
+		<id>duration</id>
+		<title>DURATION</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mode</id>
+		<title>MODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>truckNo</id>
+		<title>TRUCK NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>uniqueTripNo</id>
+		<title>UNIQUE TRIP NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>driverName</id>
+		<title>DRIVER'S NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+			<Headerdef>
+		<id>clientName</id>
+		<title>CLIENT NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>fromLocation</id>
+		<title>FROM</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>toLocation</id>
+		<title>TO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>goodsDescription</id>
+		<title>GOODS DESCRIPTION</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>containerNo</id>
+		<title>CNTNR NO.</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>sealNo</id>
+		<title>SEAL NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>bundles</id>
+		<title>BUNDLES</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>fileNo</id>
+		<title>FILE NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>jobNo</id>
+		<title>JOB NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>rncNo</id>
+		<title>RCN NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>twenty</id>
+		<title>20</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>fourty</id>
+		<title>40</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>clientDn</id>
+		<title>CLIENT'S DN</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>dnDate</id>
+		<title>D/N DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>vtWol</id>
+		<title>WT/VOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>rate</id>
+		<title>RATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>incomeKsh</id>
+		<title>INCOME(KSH)</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>incomeUsd</id>
+		<title>INCOME(USD)</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>incomeKshUsd</id>
+		<title>INCOME(KSH+USD*100)</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>clearingFee</id>
+		<title>CLEARING FEE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>portCharges</id>
+		<title>PORT CHARGES</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>netIncome</id>
+		<title>NET INCOMES </title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>fueloNO</id>
+		<title>FUEL O/NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>fuelLitter</id>
+		<title>FUEL (LTRS)</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>fuelKhs</id>
+		<title>FUEL KHS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>dMileage</id>
+		<title>D/ MILEAGE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>dAllocated</id>
+		<title>D/ ALLOCATED</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>dcsRcvdDate	</id>
+		<title>DCS RCVD DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>rebate</id>
+		<title>REBATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>invoiceNo</id>
+		<title>INVOICE NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>invId</id>
+		<title>INV ID</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>remark</id>
+		<title>REMARKS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>eirDate</id>
+		<title>EIR DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>eirNo</id>
+		<title>EIR NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef><Headerdef>
+		<id>delay</id>
+		<title>DELAYS</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>outSourcing</id>
+		<title>OUT SOURCING</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+
+</Rootheader>

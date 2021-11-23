@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/dci/tenant/finance/chartOfAccounts/" kind="src" path="DCI_ERP_V1/src/main/java"/>
+	<classpathentry kind="src" path="DCI_ERP_V1/src/main/java/com/dci/tenant/finance/chartOfAccounts"/>
+	<classpathentry excluding="com/dci/tenant/finance/chartOfAccounts/" kind="src" path="New folder/DCI_ERP_V1/src/main/java"/>
+	<classpathentry kind="src" path="New folder/DCI_ERP_V1/src/main/java/com/dci/tenant/finance/chartOfAccounts"/>
+	<classpathentry kind="lib" path="DCI_ERP_V1/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="DCI_ERP_V1/bin/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="DCI_ERP_V1/bin/src/main/webapp/library/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="DCI_ERP_V1/src/main/webapp/library/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="New folder/DCI_ERP_V1/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="New folder/DCI_ERP_V1/bin/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="New folder/DCI_ERP_V1/bin/src/main/webapp/library/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="New folder/DCI_ERP_V1/src/main/webapp/library/sqljdbc4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="DCI_ERP_V1/target/classes"/>
+</classpath>

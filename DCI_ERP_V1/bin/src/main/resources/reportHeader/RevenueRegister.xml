@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Rootheader> 
+<Headerdef>
+		<id>customerCode</id>
+		<title>CUSTOMER CODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+
+	<Headerdef>
+		<id>mloName</id>
+		<title>CUSTOMER NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>companyName</id>
+		<title>COMPANY NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	
+	
+	<!-- <Headerdef>
+		<id>paymentCenter</id>
+		<title>PAYMENT CENTER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> 
+	<Headerdef>
+		<id>countryName</id>
+		<title>COUNTRY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>-->
+	
+	
+<!-- 		<Headerdef>
+		<id>accountname</id>
+		<title>ACCOUNT HEAD NAME</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> -->
+		
+		<Headerdef>
+		<id>invoiceNo</id>
+		<title>INVOICE NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	 	 <!--  <Headerdef>
+		<id>quotationNo</id>
+		<title>QUOTATION NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> -->
+	<Headerdef>
+		<id>invoiceDt</id>
+		<title>INVOICE DATE </title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	
+	
+<!-- 	<Headerdef>
+		<id>pol</id>
+		<title>LOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>pod</id>
+		<title>LOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> -->
+	<!-- 		<Headerdef>
+		<id>fpod</id>
+		<title>FPOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>  	
+		<Headerdef>
+		<id>mlocode</id>
+		<title>CUST CODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>-->
+	
+	
+		<!-- <Headerdef>
+		<id>voyageName</id>
+		<title>MODE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef> -->
+<Headerdef>
+		<id>jobNO</id>
+		<title>JOB ORDER NO.</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>false</isdraggable>
+	</Headerdef>
+
+	
+	
+	<!-- <Headerdef>
+		<id>Month</id>
+		<title>MONTH</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	<!-- <Headerdef>
+		<id>activityShortName</id>
+		<title>ACTIVITY SHORT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	
+	<Headerdef>
+		<id>createdBy</id>
+		<title>CREATED BY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+<!-- 	<Headerdef>
+		<id>creditCategory</id>
+		<title>CREDIT CATEGORY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> 
+		<Headerdef>
+		<id>customerType</id>
+		<title>CUSTOMER TYPE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>-->
+	
+	
+	
+	<!-- <Headerdef>
+		<id>category</id>
+		<title>CATEGORY</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	
+<!-- 	<Headerdef>
+		<id>of_usd</id>
+		<title>FREIGHT USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>imco_usd</id>
+		<title>CONG SURCHARGE USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>oog_usd</id>
+		<title>OOG USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>cbr_usd</id>
+		<title>CBR USD</title>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>rcr</id>
+		<title>OOG SURCHARGE USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>others_usd</id>
+		<title>OTHERS USD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef> -->
+	
+	
+		<Headerdef>
+		<id>tc_amount</id>
+		<title>TC AMOUNT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+		<Headerdef>
+		<id>bc_amount</id>
+		<title>BC AMOUNT</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+
+	
+</Rootheader>

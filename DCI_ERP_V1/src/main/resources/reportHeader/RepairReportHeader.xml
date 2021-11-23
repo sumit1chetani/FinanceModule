@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	
+	
+	<Headerdef>
+		<id>truck</id>
+		<title>Truck Registration No</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>serviceOdometer</id>
+		<title>Service Odometer</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	<Headerdef>
+		<id>warranty</id>
+		<title>Warranty</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>vendor</id>
+		<title>Vendor</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>serviceDate</id>
+		<title> Service Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>completionDate</id>
+		<title>Completion Date</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+	
+	<Headerdef>
+		<id>cost</id>
+		<title>Cost</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	
+	
+</Rootheader>
+	

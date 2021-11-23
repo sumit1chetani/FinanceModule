@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rootheader>
+	<Headerdef>
+		<id>bookingNo</id>
+		<title>BOOKING NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>bookingDate</id>
+		<title>BOOKING DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>mloName</id>
+		<title>CUSTOMER</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>lolName</id>
+		<title>LOL</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>etd</id>
+		<title>ETD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>lodName</id>
+		<title>LOD</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>true</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>eta</id>
+		<title>ETA</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>conType</id>
+		<title>CON.TYPE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>containerNo</id>
+		<title>CONAINER NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>tripNo</id>
+		<title>TRIP NO</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>tripStartDate</id>
+		<title>TRIP START DATE</title>
+		<directive>column</directive>
+		<visible>true</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+	<Headerdef>
+		<id>licensePlate</id>
+		<title>TRUCK PLATE NO</title>
+		<directive>column</directive>
+		<visible>false</visible>
+		<isdefault>false</isdefault>
+		<isdraggable>true</isdraggable>
+	</Headerdef>
+</Rootheader>
+	

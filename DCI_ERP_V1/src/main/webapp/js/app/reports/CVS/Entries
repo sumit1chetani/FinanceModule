@@ -1,0 +1,40 @@
+D/BLtracking////
+D/agencyComreport////
+D/blIssuedreport////
+D/bookingReport////
+D/containerCycleTracking////
+D/containerHistory////
+D/containerInventoryReport////
+D/containerMovementreport////
+D/containerStockreport////
+D/containercheck////
+D/containerstatus////
+D/csr////
+D/customerRateAvailablility////
+D/detentionCalculator////
+D/doIssuedreport////
+D/emptyrepositionreport////
+D/finance////
+D/inventoryglance////
+D/loadingReport////
+D/loadingSummary////
+D/mis////
+D/mnrreport////
+/monthEndReport.js/1.1/Sat May  1 04:58:13 2021//
+D/movementHistoryreport////
+D/onboardsummary////
+D/onhirereport////
+D/pendingdoIssuedreport////
+D/quotationsummary////
+D/reports////
+/reports.js/1.3/Wed Jul 21 13:17:21 2021//
+D/roundTripreport////
+D/roundtripcasting////
+/sailingReportCtrl.js/1.1/Sat May  1 04:58:13 2021//
+D/sales////
+D/schedule////
+D/stockSummaryreport////
+D/thcReport////
+D/vesselreport////
+D/voyageCosting////
+D/voyagePandL////
